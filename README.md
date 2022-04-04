@@ -9,5 +9,7 @@ create a Jar of the main and package via "jar cfmv"
 
 extract and run Java jar with "java -jar"
 
+to compile & run, invoke : RUN
+to clean up, invoke : CLEAN
 
 
