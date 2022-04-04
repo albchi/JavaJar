@@ -1,0 +1,24 @@
+# create class files
+export CLASSPATH="." # needed for compile and run
+javac -d . Calculator.java #package
+javac Demo.java # main is in here
+java Demo # check to see if it works
+
+# create a jar manifest file, "jar_manifest.txt"
+# so later when you run the jar file, java will know
+# where to look for Main to start
+#
+cat jar_manifest.txt # Main-Class: Demo
+
+# create a jar file "Fun.jar", which has all classes
+jar cfmv Fun.jar jar_manifest.txt Demo.class PkgCalc/Calculator.class 
+
+# cp jar file into a Tmp to try out
+mkdir Tmp
+cp Fun.jar Tmp
+cd Tmp
+
+#extract and run jar as a stand alone java program
+java -jar Fun.jar
+
+

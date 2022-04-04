@@ -1,0 +1,5 @@
+rm -rf Demo.class
+rm -rf Calculator.class
+rm -rf PkgCalc
+rm -rf Tmp
+rm -rf Daddy.jar
